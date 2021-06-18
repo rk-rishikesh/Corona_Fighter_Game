@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Corona Fighter</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/vendor.js" defer></script>
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div class="modal-screen-one" id="screen-one">
+      <h1>Corona Fighter</h1>
+      <h1>Rules of Game</h1>
+      <h1>Select Character</h1>
+      <img src="assets/images/start.gif" class="btn-start" />
+    </div>
+    <div class="modal-screen-two" id="screen-two">
+      <section id="score-board">
+        <section id="corona-side">
+          <img
+            src="https://media.tenor.com/images/ab8a6714ad8444c092ead73b8e510d5a/tenor.gif"
+          />
+          <progress id="corona-health" max="100" value="100">100%</progress>
+        </section>
+  
+        <div class="modal" id="message-modal">
+          <h2 class="modal__title">&nbsp;WARNING ! Mask is not effective now.</h2>
+          <div class="modal__actions">
+            <img src="assets/images/cross.png" class="btn btn--passive" />
+          </div>
+        </div>
+  
+        <div class="modal" id="vaccine-modal">
+          <img src="assets/images/vaccine.png">
+          <div class="modal__actions">
+            <img src="assets/images/cross.png" class="btn btn--passive" />
+          </div>
+        </div>
+        
+        <div class="modal-attack" id="maskAttack-modal">
+            <img src="assets/images/maskAttack.gif" width="80%" height="50%">
+        </div>
+  
+        <div class="modal-attack" id="sanitizerAttack-modal">
+          <img src="assets/images/sanitizerAttack.gif" width="80%" height="70%">
+        </div>
+          
+        <section id="vs-tag">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbBT-pu7_qK97yHA3Q5NfX_UTbSJ7sOfCutzZYdzr61NRavKdrBVzRQE6MXvBaG_389fk&usqp=CAU"
+              width="90%"
+              height="90%"
+            />
+        </section>
+        
+        <section id="player-side">
+          <img
+            src="https://www.arabnews.com/sites/default/files/shorthand/1738576/gWw1qo6rGA/assets/Xn91ukcGGT/illo_without_gif-compressed.gif"
+            width="100%"
+            height="86%"
+          />
+          <progress id="player-health" max="100" value="100">100%</progress>
+          <span id="bonus-life"></span>
+        </section>
+        <div class="modal-heal" id="heal-modal">
+          <img src="assets/images/heart.gif" width="30%" height="50%">
+        </div>
+      </section>
+  
+      <section id="controls">
+        <img
+          src="assets/images/walk.gif"
+          id="walk-btn"
+          width="12%"
+          height="12%"
+        />
+        <img
+          src="assets/images/mask.png"
+          id="attack-btn"
+          width="9%"
+          height="9%"
+        />
+        <img
+          src="assets/images/sanitize.png"
+          id="strong-attack-btn"
+          width="12%"
+          height="12%"
+        />
+        <img
+          src="assets/images/treatement.gif"
+          id="heal-btn"
+          width="15%"
+          height="15%"
+        />
+        <img
+          src="assets/images/vaccine.png"
+          id="vaccine-btn"
+          width="10%"
+          height="10%"
+        />
+      </section>
+    </div>
+    <div class="modal-screen-one" id="screen-three">
+      <h1>Score Board</h1>
+      <h1>Restart Game Button</h1>
+      <img src="assets/images/cross.png" class="btn btn--passive" />
+    </div>
+  </body>
+</html>

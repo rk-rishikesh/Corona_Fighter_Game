@@ -1,0 +1,263 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: whitesmoke;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0.5rem;
+}
+
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2rem;
+  color: #ff0062;
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #a927f5;
+  transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #a927f5;
+  transition: all 0.2s ease-out;
+}
+
+button {
+  font: inherit;
+  background: #ff0062;
+  border: 1px solid #ff0062;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+#score-board {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+}
+
+#corona-side {
+  margin-left: 5%;
+  text-align: center;
+  height: 100%;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(192, 79, 79, 0.25);
+  background: rgb(223, 231, 222); 
+}
+
+#vs-tag {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+#player-side {
+  align-items: flex-end;
+  margin-right: 5%;
+  width: 20%;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: rgb(223, 231, 222); 
+}
+
+#health-levels {
+  margin: 5rem ;
+  width: rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;  
+}
+
+#controls {
+  margin: 3rem auto;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+  display: flex;
+  flex-direction: row;
+}
+
+
+#walk-btn{
+  margin-top: 3rem;
+  margin-left: 4%;
+  margin-right: 8%;
+}
+
+#attack-btn{
+  margin-top: 3%;
+  margin-right: 8%;
+}
+
+#strong-attack-btn{
+  margin-top: 2%;
+  margin-right: 8%;
+}
+
+#heal-btn{
+  margin-top: 0.5%;
+  margin-right: 8%;
+} 
+
+#vaccine-btn{
+  margin-top: 3%;
+  margin-right: 5%;
+}
+
+
+
+/* POP-UP CSS */
+.modal {
+  position: fixed;
+  z-index: 100;
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  top: 6vh;
+  left: 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+.modal.visible {
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+.modal .modal__title {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid #00329e;
+  background: #00329e;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal .modal__content {
+  padding: 1rem;
+}
+
+.modal .modal__actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn--passive {
+  width : 2rem;
+  height: 2rem;
+}
+
+.btn-start {
+  width: 13rem;
+  height: 10rem;
+}
+
+/* Attack Model */
+.modal-attack {
+  position: fixed;
+  z-index: 100;
+  border-radius: 10px;
+  width: 40%;
+  top: 15vh;
+  left: 11%;
+  display: none;
+}
+
+.modal-attack.visible {
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+.modal-heal {
+  position: fixed;
+  z-index: 100;
+  border-radius: 10px;
+  width: 80%;
+  top: 3vh;
+  left: 73%;
+  display: none;
+}
+
+.modal-heal.visible {
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+/* HOME SCREEN */
+.modal-screen-one {
+  position: fixed;
+  width: 100%;
+  background: white;
+  display: none;
+}
+
+.modal-screen-one.visible {
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+/* Game Screen */
+.modal-screen-two {
+  position: fixed;
+  width: 100%;
+  display: none;
+}
+
+.modal-screen-two.visible {
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+/* ScoreCard Screen */
+.modal-screen-three {
+  position: fixed;
+  width: 100%;
+  display: none;
+}
+
+.modal-screen-three.visible {
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
