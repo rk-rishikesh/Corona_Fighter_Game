@@ -4,6 +4,7 @@ html {
 
 body {
   background: whitesmoke;
+  margin: 0%;
 }
 
 h2 {
@@ -61,24 +62,22 @@ button:focus {
 #corona-side {
   margin-left: 5%;
   text-align: center;
-  height: 100%;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 0 2px 8px rgba(192, 79, 79, 0.25);
   background: rgb(223, 231, 222); 
 }
 
 #vs-tag {
-  margin-left: 20%;
-  margin-right: 20%;
   margin-top: 5%;
+  width: 2%;
+  height: 2%;
 }
 
 #player-side {
-  align-items: flex-end;
   margin-right: 5%;
-  width: 20%;
+  margin-left: 10rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   background: rgb(223, 231, 222); 
 }
@@ -175,7 +174,7 @@ button:focus {
 
 .btn-start {
   width: 13rem;
-  height: 10rem;
+  height: 13rem;
 }
 
 /* Attack Model */
@@ -213,7 +212,11 @@ button:focus {
 .modal-screen-one {
   position: fixed;
   width: 100%;
-  background: white;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/originals/53/bb/8c/53bb8c78a6f2d7ed2a24d8c44b511e4b.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
   display: none;
 }
 
@@ -224,7 +227,6 @@ button:focus {
 
 /* Game Screen */
 .modal-screen-two {
-  position: fixed;
   width: 100%;
   display: none;
 }
